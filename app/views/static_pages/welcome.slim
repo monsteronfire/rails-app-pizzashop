@@ -1,5 +1,9 @@
 h1 Welcome
 
-button.btn.waves-effect.waves-light name="action" type="submit"
-  | Submit
-  i.material-icons.right send
+= link_to(new_user_session_path) do
+  button.btn.waves-effect.waves-light name="action" type="submit"
+    | Sign In
+
+= link_to(new_user_registration_path) do
+  button.btn.waves-effect.waves-light name="action" type="submit"
+    | Sign Up
