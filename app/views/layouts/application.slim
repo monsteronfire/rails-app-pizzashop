@@ -7,5 +7,17 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    = render 'layouts/flash_messages'
-    = yield
+    = render 'layouts/nav'
+    .container
+      = render 'layouts/flash_messages'
+
+      section#section_order_now.section_order_now
+        = yield :section_order_now
+
+      = content_for :section_order_now
+        = render 'sections/order_now'
+
+      section#section_locations.section_locations
+
+      = content_for :section_locations
+        = render 'sections/locations'

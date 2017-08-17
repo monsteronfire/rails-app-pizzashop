@@ -1,0 +1,19 @@
+nav.nav-extended
+  .nav-decoration
+    = image_tag("header-decorator.png", class:"header-decoration")
+  .nav-logo
+    = link_to "#" do
+      = image_tag("main-logo.png")
+  .nav-wrapper
+    a.button-collapse data-activates="mobile-demo" href="#"
+      i.material-icons menu
+  .nav-content
+    ul.tabs
+      li.tab
+        a href="#order_now"  Order now
+      li.tab
+        a.active href="#locations"  Locations
+      li.tab
+        a href="#about"  About
+      li.tab
+        a href="terms"  Terms & Conditions
