@@ -2,23 +2,34 @@ nav {
   background-color: white;
 }
 
+.nav-decoration {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+
 .header-decoration {
   display: block;
-  width: 50%;
+  width: 100%;
   max-width: 500px;
   margin-top: -5px;
   margin-right: auto;
   margin-bottom: 20px;
   margin-left: auto;
+  opacity: 0.75;
 }
 
 .nav-logo {
+  position: relative;
+  z-index: 1;
+  padding-top: 190px;
+
   a {
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px;
     background-color: black;
     border-radius: 100%;
   }
