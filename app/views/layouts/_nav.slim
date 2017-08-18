@@ -1,19 +1,16 @@
-nav.nav-extended
+nav
   .nav-decoration
     = image_tag("header-decorator.png", class:"header-decoration")
   .nav-logo
     = link_to "#" do
       = image_tag("main-logo.png")
-  .nav-wrapper
-    a.button-collapse data-activates="mobile-demo" href="#"
-      i.material-icons menu
-  .nav-content
-    ul.tabs
-      li.tab
-        = link_to 'Order Now', anchor: "#order_now"
-      li.tab
-        a.active href="#locations"  Locations
-      li.tab
+  .nav-menu
+    ul
+      li
+        a href="#order_now" Order Now
+      li
+        a href="#locations"  Locations
+      li
         a href="#about"  About
-      li.tab
-        a href="terms"  Terms & Conditions
+      li
+        a href="#terms"  Terms & Conditions
