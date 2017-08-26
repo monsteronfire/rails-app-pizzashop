@@ -10,15 +10,4 @@ html
     = render 'layouts/nav'
     .container
       = render 'layouts/flash_messages'
-
-      section#section_order_now.section_order_now
-        = render 'sections/order_now'
-
-      section#section_locations.section_locations
-        = render 'sections/locations'
-
-      section#section_about.section_about
-        = render file: 'static_pages/about'
-
-      section#section_terms.section_terms
-        = render file: 'static_pages/terms'
+      = yield
