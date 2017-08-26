@@ -1,18 +1,12 @@
 .site-nav
   .nav-menu
     ul
-      li
-        a href="#menu" Menu
-      li
-        a href="#order_now" Order Now
-      li
-        a href="#locations"  Locations
-      li
-        a href="#about"  About
-      li
-        a href="#terms"  Terms & Conditions
+      li = link_to "Menu", products_path
+      li = link_to "Order Now", orders_path
+      li = link_to "Locations", locations_path
+      li = link_to "About", static_pages_about_path
+      li = link_to "Terms & Conditions", static_pages_terms_path
   .nav-decoration
     = image_tag("header-decorator.png", class:"header-decoration")
   .nav-logo
-    = link_to "#" do
-      = image_tag("main-logo.png")
+    = link_to image_tag("main-logo.png"), root_path
