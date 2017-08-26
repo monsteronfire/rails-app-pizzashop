@@ -13,7 +13,9 @@
  */
 
 /* Shared */
+@import "shared/reset";
 @import "shared/layout";
+@import "shared/typography";
 
 /* Nav */
 @import "nav/navbar";

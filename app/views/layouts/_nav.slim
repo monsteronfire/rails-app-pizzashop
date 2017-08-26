@@ -1,9 +1,4 @@
-nav
-  .nav-decoration
-    = image_tag("header-decorator.png", class:"header-decoration")
-  .nav-logo
-    = link_to "#" do
-      = image_tag("main-logo.png")
+.site-nav
   .nav-menu
     ul
       li
@@ -16,3 +11,8 @@ nav
         a href="#about"  About
       li
         a href="#terms"  Terms & Conditions
+  .nav-decoration
+    = image_tag("header-decorator.png", class:"header-decoration")
+  .nav-logo
+    = link_to "#" do
+      = image_tag("main-logo.png")
