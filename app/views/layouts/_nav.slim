@@ -1,11 +1,12 @@
 .site-nav
   .nav-menu
-    ul
-      li = link_to "Menu", products_path
-      li = link_to "Order Now", orders_path
-      li = link_to "Locations", locations_path
-      li = link_to "About", static_pages_about_path
-      li = link_to "Terms & Conditions", static_pages_terms_path
+    .nav-menu-inner
+      ul
+        li = link_to "Menu", products_path
+        li = link_to "Order Now", orders_path
+        li = link_to "Locations", locations_path
+        li = link_to "About", static_pages_about_path
+        li = link_to "Terms & Conditions", static_pages_terms_path
   .nav-decoration
     = image_tag("header-decorator.png", class:"header-decoration")
   .nav-logo

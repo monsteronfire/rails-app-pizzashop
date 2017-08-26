@@ -6,10 +6,31 @@
 .nav-menu {
   position: relative;
   z-index: 1;
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: black;
   text-align: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    height: 100%;
+    width: 40px;
+    background: linear-gradient(to left, rgba(0,0,0,0.80) 0%,rgba(0,0,0,0) 100%);
+  }
+
+  .nav-menu-inner {
+    position: relative;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  ul {
+    width: 510px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
   ul li {
     display: inline-block;
@@ -38,12 +59,12 @@
 .nav-logo {
   position: relative;
   z-index: 1;
-  padding-top: 120px;
+  padding-top: 30px;
 
   a {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
     padding: 20px;
     background-color: black;
